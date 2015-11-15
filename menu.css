@@ -4,7 +4,8 @@
 */
 .ib.threebar, .ib.hamburger {
   height: 0.2em;
-  top: 0.4em;
+  top: 0;
+  transform: translate(0, 0.4em);
   border-radius: 0.08em;
 }
 .ib.threebar:before, .ib.hamburger:before,
@@ -22,4 +23,56 @@
 }
 .ib.threebar:after, .ib.hamburger:after {
   transform: translate(0, 0.3em);
+}
+
+/* Because it's a simple extension:
+    vertical ellipsis
+*/
+.ib.vellipsis {
+  height: 0.2em;
+  width: 0.2em;
+  top: 0;
+  transform: translate(0.4em, 0.4em);
+  border-radius: 0.1em;
+}
+.ib.vellipsis:before,
+.ib.vellipsis:after {
+  position: absolute;
+  content: " ";
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 0.1em;
+  background-color: inherit;
+}
+
+.ib.vellipsis:before {
+  transform: translate(0, -0.3em);
+}
+.ib.vellipsis:after {
+  transform: translate(0, 0.3em);
+}
+/* horizonal ellipsis
+*/
+.ib.ellipsis {
+  height: 0.2em;
+  width: 0.2em;
+  top: 0;
+  transform: translate(0.4em, 0.4em);
+  border-radius: 0.1em;
+}
+.ib.ellipsis:before,
+.ib.ellipsis:after {
+  position: absolute;
+  content: " ";
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 0.1em;
+  background-color: inherit;
+}
+
+.ib.ellipsis:before {
+  transform: translate(-0.3em, 0);
+}
+.ib.ellipsis:after {
+  transform: translate(0.3em, 0);
 }
