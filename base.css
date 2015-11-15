@@ -36,8 +36,8 @@
 
 /* HOVER STATES */
 .ibwrap.bordered:hover, .ibwrap.boxinvert:hover {
-  border-color: #04D3D8;
+  border-color: #DC1547;
 }
 .ibwrap:not(.boxinvert):hover .ib, .ibwrap.boxinvert:hover{
-  background-color: #04D3D8;
+  background-color: #DC1547;
 }
