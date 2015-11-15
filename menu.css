@@ -51,8 +51,7 @@
 .ib.vellipsis:after {
   transform: translate(0, 0.3em);
 }
-/* horizonal ellipsis
-*/
+/* horizonal ellipsis */
 .ib.ellipsis {
   height: 0.2em;
   width: 0.2em;
@@ -75,4 +74,28 @@
 }
 .ib.ellipsis:after {
   transform: translate(0.3em, 0);
+}
+
+/* plus sign */
+.ib.plus {
+  height: 0.2em;
+  top: 0;
+  transform: translate(0, 0.4em);
+  border-radius: 0.08em;
+}
+.ib.plus:before,
+.ib.plus:after {
+  position: absolute;
+  content: " ";
+  width: 1em;
+  height: 0.2em;
+  border-radius: 0.08em;
+  background-color: inherit;
+}
+
+.ib.plus:before {
+  transform: rotate(90deg);
+}
+.ib.plus:after {
+  transform: translate(0, 0);
 }

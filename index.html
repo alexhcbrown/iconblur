@@ -31,13 +31,17 @@
             <i class="ibwrap bordered"><i class="ib ellipsis"></i></i>
             <i class="ibwrap boxinvert"><i class="ib ellipsis"></i></i>
 
+            <i class="ibwrap"><i class="ib plus"></i></i>
+            <i class="ibwrap bordered"><i class="ib plus"></i></i>
+            <i class="ibwrap boxinvert"><i class="ib plus"></i></i>
+
             <h3>Animate</h3>
             <i class="ibwrap bordered"><i id="ani" class="ib hamburger"></i></i>
 
         </div>
         <script>
             ani = document.getElementById("ani");
-            icons = ["hamburger", "vellipsis", "ellipsis"];
+            icons = ["hamburger", "vellipsis", "ellipsis", "plus"];
             cur = 0;
             function changeIcon() {
                 if(cur >= icons.length-1) {
@@ -46,7 +50,7 @@
                 cur++;
                 ani.className = "ib " + icons[cur];
             }
-            window.setInterval(changeIcon,3000);
+            window.setInterval(changeIcon, 1000);
         </script>
     </body>
 </html>
