@@ -1,0 +1,4 @@
+.ib, .ib:before, .ib:after {
+  transition-property: width, height, top, left, transform, border-radius, border-width;
+  transition-duration: .5s;
+}
