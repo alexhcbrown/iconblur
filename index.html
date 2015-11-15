@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>Example Page</title>
+        <title>Iconblur - Examples</title>
         <link rel="stylesheet" href="base.css" />
+        <link rel="stylesheet" href="animate.css" />
         <link rel="stylesheet" href="menu.css" />
         <style>
             .wrap {
@@ -29,6 +30,23 @@
             <i class="ibwrap"><i class="ib ellipsis"></i></i>
             <i class="ibwrap bordered"><i class="ib ellipsis"></i></i>
             <i class="ibwrap boxinvert"><i class="ib ellipsis"></i></i>
+
+            <h3>Animate</h3>
+            <i class="ibwrap bordered"><i id="ani" class="ib hamburger"></i></i>
+
         </div>
+        <script>
+            ani = document.getElementById("ani");
+            icons = ["hamburger", "vellipsis", "ellipsis"];
+            cur = 0;
+            function changeIcon() {
+                if(cur >= icons.length-1) {
+                    cur = -1;
+                }
+                cur++;
+                ani.className = "ib " + icons[cur];
+            }
+            window.setInterval(changeIcon,3000);
+        </script>
     </body>
 </html>
