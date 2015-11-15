@@ -1,0 +1,43 @@
+.ib {
+  position: relative;
+  display: block;
+  font-size: inherit;
+  background-color: #222;
+  width: 1em;
+}
+
+.ibwrap {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0.4em;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* wrap with border */
+.ibwrap.bordered {
+  border-color: #222;
+}
+
+/* wrap with black box around, and invert */
+.ibwrap.boxinvert {
+  border-color: #222;
+  background-color: #222;
+}
+.ibwrap.boxinvert .ib{
+  background-color: #eee;
+}
+
+
+/* HOVER STATES */
+.ibwrap.bordered:hover, .ibwrap.boxinvert:hover {
+  border-color: #04D3D8;
+}
+.ibwrap:not(.boxinvert):hover .ib, .ibwrap.boxinvert:hover{
+  background-color: #04D3D8;
+}
