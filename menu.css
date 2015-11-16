@@ -117,3 +117,31 @@
   background-color: inherit;
   transform: translate(0, 0);
 }
+
+/* magnifying glass */
+.ib.search, .ib.magnify {
+  height: 0.6em;
+  width: 0.6em;
+  top: 0;
+  transform: translate(0, 0);
+  border-radius: 0.6em;
+  border-width: 0.1em;
+  border-style: solid;
+}
+.ib.search:before, .ib.magnify:before,
+.ib.search:after, .ib.magnify:after {
+  position: absolute;
+  content: " ";
+  height: 0em;
+  width: 0.4em;
+  border-radius: 0.08em;
+  border: solid 0.05em;
+  border-color: inherit;
+  background-color: inherit;
+  transform: translate(0.5em, 0.7em) rotate(45deg);
+}
+.ib.search>.ib, .ib.magnify>.ib {
+  position: absolute;
+  font-size: 0.45em;
+  transform: translate(0.17em, 0.56em);
+}
